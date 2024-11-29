@@ -7,6 +7,7 @@ int soma(int acumulador, int a, int b)
     {
         printf("Número: ");
         scanf("%d", &a);
+        printf("Número: ");
         scanf("%d", &b);
 
         acumulador = a + b;
