@@ -7,14 +7,19 @@
 
 int main()
 {
-    char* input = readline("Insira a operação desejada: ");
-    add_history(input);
+    int operacao;
+    printf("1. Soma\n2. Subtração\n3. Multiplicação\n4. Divisão");
+    scanf("%d", &operacao);
 
-    if(strstr(input, "soma"))
+    switch(operacao)
     {
-        soma();
-    }
-    
-    free(input);
+        case 1:
 
+        int valor1, valor2;
+        printf("Digite os valores que deseja somar:");
+        scanf("%d %d", &valor1, &valor2);
+
+        soma(valor1, valor2);
+        break;
+    }
 }
