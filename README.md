@@ -6,4 +6,4 @@ Dois programas:
 
 1 - "x + y" e outras 4 operacoes
 2 - "r<num>" para raiz quadrada
-2 - "!<num>" para fatorial
+2 - "!<num> "para fatorial
