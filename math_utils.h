@@ -36,5 +36,6 @@ double raizQuadrada(double n)
       {
          fim = raiz;
       }
-   }while()
+   }while(1);
+
 }
