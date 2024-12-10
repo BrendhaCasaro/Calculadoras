@@ -20,22 +20,18 @@ double divisao(double a, double b)
    return a / b;
 }
 
+int fatorial(int a, int b)
+{
+}
+
 double raizQuadrada(double n)
 {
-   double inicio = 0, fim = 0;
+   double recorre = n;
 
-   do
+   for (int i = 0; n < 10; n++)
    {
-      int raiz = (inicio + fim) / 2;
+      recorre = recorre / 2 + n / (2 * recorre);
+   }
 
-      if (raiz * raiz < n)
-      {
-         inicio = raiz;
-      }
-      else
-      {
-         fim = raiz;
-      }
-   }while(1);
-
+   return recorre;
 }
