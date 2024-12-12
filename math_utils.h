@@ -22,17 +22,17 @@ double divisao(double a, double b)
 
 int fatorial(int a)
 {
-   
+   int result = 0;
+   for (int i = 0; i < a; i++)
+   {
+      result = a * a - 1;
+      a--;
+   }
+
+   return result;
 }
 
 double raizQuadrada(double n)
 {
-   double recorre = n;
-
-   for (int i = 0; n < 10; n++)
-   {
-      recorre = recorre / 2 + n / (2 * recorre);
-   }
-
-   return recorre;
+   
 }
