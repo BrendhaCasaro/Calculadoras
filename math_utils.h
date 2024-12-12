@@ -20,8 +20,9 @@ double divisao(double a, double b)
    return a / b;
 }
 
-int fatorial(int a, int b)
+int fatorial(int a)
 {
+   
 }
 
 double raizQuadrada(double n)
