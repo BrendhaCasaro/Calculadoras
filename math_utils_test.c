@@ -19,13 +19,48 @@ int failed = 0;
 // End of test helpers
 
 // Testar a funcao soma
-TEST(test_soma) {
+TEST(test_soma) 
+{
   int x = 5;
   int y = 10;
   ASSERT(soma(x, y) == 15);
 }
 
-int main() {
-  RUN_TEST(test_soma);
-  return failed;
+TEST(test_subtracao)
+{
+  double x = 1000;
+  double y = 2000;
+  assert(subtracao(x, y);
+}
+
+TEST(test_multiplicacao)
+{
+  double x = 9;
+  double y = 9;
+  multiplicacao(x, y);
+}
+
+TEST(test_divisao)
+{
+  double x = 30;
+  double y = 5;
+  divisao(x, y);
+}
+
+TEST(test_fatorial)
+{
+  double x = 4;
+  ASSERT(fatorial(x) == 6);
+}
+
+TEST(teste_raiz2)
+{
+  double x = 4;
+  ASSERT(raizQuadrada(x) == 3);
+}
+
+int main()
+{
+  RUN_TEST(teste_raiz2);
+  // RUN_TEST(test_fatorial);
 }

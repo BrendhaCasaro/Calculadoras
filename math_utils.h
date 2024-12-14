@@ -1,4 +1,4 @@
-#define error 1e-14
+#include <stdio.h>
 
 double soma(double a, double b)
 {
@@ -22,31 +22,32 @@ double divisao(double a, double b)
 
 int fatorial(int a)
 {
-   if(a <= 0)
+   if (a <= 0)
    {
-      printf("ERROR")
+      printf("ERROR\n");
    }
-   int result = 0;
+
+   int result;
+
    for (int i = 0; i < a; i++)
    {
-      result = a * a - 1;
+      result = a * (a - 1);
       a--;
    }
 
    return result;
 }
 
-double potencia(double a)
+double potencia(double a, int base)
 {
    if (a == 0)
    {
-      printf("ERROR")
-      return 1;
+      printf("ERROR\n");
    }
 
-   int resultado = a; // base ^ 1
+   double resultado = a; // base ^ 1
 
-   for (int i = 1; i < a; i++)
+   for (int i = 1; i < base; i++)
    {
       resultado = base * resultado;
    }
@@ -56,4 +57,18 @@ double potencia(double a)
 
 double raizQuadrada(double n)
 {
+   double result;
+
+   for (int i = 1; i < n; i++)
+   {
+      result = i * i;
+
+      if (result == n)
+      {
+         result = i;
+         break;
+      }
+   }
+
+   return result;
 }
