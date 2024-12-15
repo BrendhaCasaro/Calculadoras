@@ -30,37 +30,48 @@ TEST(test_subtracao)
 {
   double x = 1000;
   double y = 2000;
-  assert(subtracao(x, y);
+  assert(subtracao(x, y) == -1000);
 }
 
-TEST(test_multiplicacao)
+TEST(test_multiplacacao)
 {
   double x = 9;
   double y = 9;
-  multiplicacao(x, y);
+  ASSERT(multiplicacao(x, y) == 81);
 }
 
 TEST(test_divisao)
 {
   double x = 30;
   double y = 5;
-  divisao(x, y);
+  ASSERT(divisao(x, y) == 6);
 }
 
 TEST(test_fatorial)
 {
-  double x = 4;
-  ASSERT(fatorial(x) == 6);
+  double x = 5;
+  ASSERT(fatorial(55) == 6);
 }
 
-TEST(teste_raiz2)
+TEST(test_raiz2)
 {
   double x = 4;
-  ASSERT(raizQuadrada(x) == 3);
+  ASSERT(raizQuadrada(x) == 2);
 }
 
+TEST(test_potencia)
+{
+  double x = 4;
+  double y = 2;
+  ASSERT(potencia(x, y) == 8);
+}
 int main()
 {
-  RUN_TEST(teste_raiz2);
-  // RUN_TEST(test_fatorial);
+  RUN_TEST(test_soma);
+  RUN_TEST(test_subtracao);
+  RUN_TEST(test_multiplacacao);
+  RUN_TEST(test_divisao);
+  RUN_TEST(test_fatorial);
+  RUN_TEST(test_raiz2);
+  RUN_TEST(test_potencia);
 }
