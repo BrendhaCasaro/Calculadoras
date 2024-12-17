@@ -49,8 +49,8 @@ TEST(test_divisao)
 
 TEST(test_fatorial)
 {
-  double x = 5;
-  ASSERT(fatorial(55) == 6);
+  double x = 3;
+  ASSERT(fatorial(x) == 6);
 }
 
 TEST(test_raiz2)

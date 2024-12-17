@@ -27,14 +27,17 @@ int fatorial(int a)
       printf("ERROR\n");
    }
 
-   int result;
+   int result = 0;
+   int operacao = a;
 
    for (int i = 0; i < a; i++)
    {
-      result = a * (a - 1);
+      result = op * (a - 1);
+      operacao = result;
       a--;
    }
 
+   printf("%d", result);
    return result;
 }
 
