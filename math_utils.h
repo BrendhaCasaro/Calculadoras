@@ -32,7 +32,7 @@ int fatorial(int a)
 
    for (int i = 0; i < a; i++)
    {
-      result = op * (a - 1);
+      result = operacao * (a - 1);
       operacao = result;
       a--;
    }
@@ -52,7 +52,7 @@ double potencia(double a, int base)
 
    for (int i = 1; i < base; i++)
    {
-      resultado = base * resultado;
+      resultado = resultado * a;
    }
 
    return resultado;

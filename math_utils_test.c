@@ -61,9 +61,9 @@ TEST(test_raiz2)
 
 TEST(test_potencia)
 {
-  double x = 4;
-  double y = 2;
-  ASSERT(potencia(x, y) == 8);
+  double x = 5;
+  double y = 3;
+  ASSERT(potencia(x, y) == 125);
 }
 int main()
 {
