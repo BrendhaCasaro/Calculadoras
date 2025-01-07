@@ -1,31 +1,19 @@
 #include <stdio.h>
 #include "math_utils.h"
+#include <readline/readline.h>
+#include <readline/history.h>
+#include <string.h>
 
 int main()
 {
-    printf("Insira a operação desejada: ");
-    printf("1. Soma");
-    printf("2. Subtração");
-    printf("3. Multiplicação");
-    printf("4. Divisão");
-    printf("5. Raiz quadrada");
-    printf("6. Potência");
-    printf("7. Fatorial");
-
-    int operacao;
-    scanf("%d", &operacao);
-
-    switch (operacao)
+    while (true)
     {
-    case 1:
-        int a, b;
-        printf("Digite os valores que deseja somar: ");
-        scanf("%d", &a);
-        scanf("%d", &b);
+        char *input = readline("Calculadora> ");
+        add_history(input);
 
-        double result;
-        result = soma(a, b);
-
-        printf("%d + %d = %g", a, b, result);
+        if(strstr(input, "+")
+        {
+            
+        }
     }
 }
