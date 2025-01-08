@@ -1,5 +1,5 @@
 run:
-	gcc -o main main.c && ./main && rm main
+	gcc -o main main.c -lreadline  && ./main && rm main
 
 
 test:
