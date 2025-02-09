@@ -13,17 +13,30 @@ int main()
         char *input = readline("Calculadora> ");
         add_history(input);
 
+
         if(strstr(input, "+"))
         {
-            for(int i = 0; i < strlen(input); i++)
+            char *num1 = strchr(input, ' ');
+            
+            if (num1 == NULL) {
+                printf("Não há espaço na string!\n");
+                return 1;
+
+
+            char *ponteiro = input;
+            while(*ponteiro != ' ' && *ponteiro != '\0')
             {
-                if()
-                {
-                    printf("deu ");
-                }
+                ponteiro++;
             }
-            int valor = atoi(input);
-            printf("%d\n", valor);
+
+            if(*ponteiro == ' ')
+            {
+                ponteiro = ponteiro + 2;
+            }
+
+            char *num2 = strdup(ponteiro)
+
         }
     }
+}
 }
