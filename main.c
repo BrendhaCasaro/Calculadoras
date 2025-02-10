@@ -6,6 +6,20 @@
 #include <stdlib.h>
 #include <ctype.h>
 
+size_t caracterCount (char *input, char c)
+{
+    size_t i = 0;
+    while (input[i] != '\0')
+    {
+        if(input[i] == c)
+        {
+            return i;
+        }
+
+        i++;
+    }
+}
+
 int main()
 {
     while(1)
@@ -13,30 +27,15 @@ int main()
         char *input = readline("Calculadora> ");
         add_history(input);
 
-
         if(strstr(input, "+"))
         {
-            char *num1 = strchr(input, ' ');
-            
-            if (num1 == NULL) {
-                printf("Não há espaço na string!\n");
-                return 1;
-
-
-            char *ponteiro = input;
-            while(*ponteiro != ' ' && *ponteiro != '\0')
+            for(int i = 0 ; i < caracterCount(input, ' '); i++)
             {
-                ponteiro++;
+                char num1[caracterCount(input, ' ') + 1];
+                num1[i] = input[i];
+                printf("%s\n", num1);       
             }
-
-            if(*ponteiro == ' ')
-            {
-                ponteiro = ponteiro + 2;
-            }
-
-            char *num2 = strdup(ponteiro)
-
         }
     }
 }
-}
+
