@@ -4,11 +4,11 @@ Dois programas:
 
 2 - utilize a sua biblioteca, já testada, para escrever um REPL. Ele irá interpretar comandos e realizar a operação entre um ou dois numeros. Os comandos são:
 
-1 - "x + y" e outras 4 operacoes;
+  1 - "x + y" e outras 4 operacoes;
 
-2 - "r<num>" para raiz quadrada;
+  2 - "r<num>" para raiz quadrada;
 
-3- "!<num> "para fatorial.
+  3- "!<num> "para fatorial.
 
 Fututo:
 - randomizar o número usados nos teste
