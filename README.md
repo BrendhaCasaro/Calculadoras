@@ -8,8 +8,5 @@ Dois programas:
 2 - "r<num>" para raiz quadrada
 2 - "!<num> "para fatorial
 
-3 - randomizar o número usados nos teste
-
-obs: 
-    REPL: para dinamizar a quantidade de casas decimais nas operações devo buscar tudo que tem antes do primeiro espaço e guardar em uma variavel, com uma função que anda um contador até encontrar o primeiro espaço eu consigo saber até onde tem números, com o retorno do contador eu uso como indice pra string que serão os números.
-    
+Fututo:
+- randomizar o número usados nos teste
