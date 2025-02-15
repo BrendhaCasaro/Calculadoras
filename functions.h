@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "math_utils.h"
 
 size_t caracterCount(char *input, char caracter)
 {
@@ -14,7 +15,7 @@ size_t caracterCount(char *input, char caracter)
     }
 }
 
-double splitNumbers (char *input)
+void splitNumbers (char *input, double *num1, double *num2)
 {
     char string1[caracterCount(input, ' ')];
 
@@ -37,8 +38,6 @@ double splitNumbers (char *input)
         string2[i] = input[countstring1 + i];
     }
 
-    double num1 = strtod(string1, NULL);
-    double num2 = strtod(string2, NULL);
-
-    return 
+    *num1 = strtod(string1, NULL);
+    *num2 = strtod(string2, NULL);
 }

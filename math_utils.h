@@ -1,3 +1,5 @@
+#ifndef MATH_UTILS_H
+#define MATH_UTILS_H
 #include <stdio.h>
 
 double soma(double a, double b)
@@ -75,3 +77,5 @@ double raizQuadrada(double n)
 
    return result;
 }
+
+#endif

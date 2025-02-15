@@ -15,8 +15,10 @@ int main()
 
         if (strstr(input, "+"))
         {
-            double numero, numero2 = splitNumbers(input);
-            printf("Numero: %f %f", numero, numero2);
+            double num1, num2;
+            splitNumbers(input, &num1, &num2);
+
+            printf("%f\n", soma(num1, num2));
         }
         free(input);
     }
