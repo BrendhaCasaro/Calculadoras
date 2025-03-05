@@ -1,0 +1,49 @@
+body {
+    display: flex;
+    background-color: #1D1A31;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 25px;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.background {
+    background-color: white;
+    height: auto;
+}
+
+.aroundTitle {
+    display: flex;
+    background-color: #C1A5A9;
+    color: white;
+    width: auto;
+    height: 100px;
+    padding: 1px;
+    align-items: center;
+    justify-content: center;
+}
+
+.aroundTitle h1 {
+    margin: 0;
+}
+
+button {
+    font-size: 25px;
+    width: 80px;
+    height: 80px;
+    border-radius: 25px;
+}
+
+#result {
+    background-color: white;
+    width: 300px;
+    height: 50px;
+    margin: auto;
+    font-size: 40px;
+    color: black;
+    text-align: right;
+    border: solid black 1px;
+    padding: 16px;
+}
