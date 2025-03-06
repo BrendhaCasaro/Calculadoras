@@ -9,6 +9,3 @@ Dois programas:
   2 - "r<num>" para raiz quadrada;
 
   3- "!<num> "para fatorial.
-
-Fututo:
-- randomizar o número usados nos teste

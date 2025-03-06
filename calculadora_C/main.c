@@ -19,51 +19,50 @@ int main()
         {
             splitNumbers(input, &num1, &num2);
 
-            printf("%f\n", soma(num1, num2));
+            printf("%.1f\n", soma(num1, num2));
         }
 
         else if (strstr(input, "-"))
         {
             splitNumbers(input, &num1, &num2);
 
-            printf("%f\n", subtracao(num1, num2));
+            printf("%.1f\n", subtracao(num1, num2));
         }
 
         else if (strstr(input, "*"))
         {
             splitNumbers(input, &num1, &num2);
 
-            printf("%f\n", multiplicacao(num1, num2));
+            printf("%.1f\n", multiplicacao(num1, num2));
         }
 
         else if (strstr(input, "/"))
         {
             splitNumbers(input, &num1, &num2);
 
-            printf("%f\n", divisao(num1, num2));
+            printf("%.1f\n", divisao(num1, num2));
         }
 
         else if (strstr(input, "!"))
         {
-            splitNumbers(input, &num1, &num2);
+            num1 = strtod(&input[1], NULL);
 
-            printf("%f\n", fatorial(num1));
+            fatorial(num1);
         }
 
         else if (strstr(input, "^"))
         {
             splitNumbers(input, &num1, &num2);
 
-            printf("%f\n", potencia(num1, num2));
+            potencia(num1, num2);
         }
 
         else if (strstr(input, "r"))
         {
             num1 = strtod(&input[1], NULL);
-        
-            printf("%f\n", raizQuadrada(num1));
+
+            raizQuadrada(num1);
         }
         free(input);
-
     }
 }

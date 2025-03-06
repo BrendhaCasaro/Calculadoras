@@ -1,6 +1,7 @@
 #ifndef MATH_UTILS_H
 #define MATH_UTILS_H
 #include <stdio.h>
+#include <math.h>
 
 double soma(double a, double b)
 {
@@ -39,8 +40,7 @@ int fatorial(int a)
       a--;
    }
 
-   printf("%d", result);
-   return result;
+   printf("%d\n", result);
 }
 
 double potencia(double a, int base)
@@ -57,25 +57,14 @@ double potencia(double a, int base)
       resultado = resultado * a;
    }
 
-   return resultado;
+   printf("%.1f\n", resultado);
 }
 
-double raizQuadrada(double n)
+double raizQuadrada(double a)
 {
-   double result;
+   double result = sqrt(a);
 
-   for (int i = 1; i < n; i++)
-   {
-      result = i * i;
-
-      if (result == n)
-      {
-         result = i;
-         break;
-      }
-   }
-
-   return result;
+   printf("%.1f\n", result);
 }
 
 #endif
